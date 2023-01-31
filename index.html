@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fetch Event</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+     <!-- desktop version -->
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui menu">
+                    <h1><i class="headphones icon"></i> Fetch Event</h1>
+                    <div class="right menu">
+                    <a href="LandingPage.html" class="item"><i class="home icon big"></i></a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile version-->
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui menu">
+                    <a href="LandingPage.html" id="mobile_item" class="item"><i class="home icon big"></i></a>
+                    <h1 class="mobile-page-title">Fetch Event</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex-wrapper">
+            <div class="ui input search-input">
+                <input type="text" placeholder="Artist" id="artist-name" />
+            </div>
+            <div class="ui input search-input">
+                <select class="ui search dropdown" id="location-dropdown">
+                    <option value="">Select Location</option>
+                    <option value="302">Australian Capital Territory</option>
+                    <option value="302">New South Wales</option>
+                    <option value="305">Tasmania</option>
+                <!-- // was WA 304 or 306? -->
+                    <option value="304">Western Australia</option>
+                    <option value="305">Victoria</option>
+                </select>
+            </div>
+            <button class="ui blue button" type="submit" id="search-button">Search</button>
+            </div>
+        </div>
+   
+
+        <!--Search results-->
+        <div class="pusher">
+            
+            <div class="ui equal width grid">
+                <div class="column">
+                    <div id="content" class="ui segment">
+                        <!-- card box populated by api with card element per event -->
+                        <div class="ui link cards" id="card-box">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+    <script src="./assets/js/event-index-api-functions.js"></script>
+    <script src="./assets/js/eventscript.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/* .search-input{
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:5px; 
+    justify-content: flex-start;
+} */
+
+.ui.segment {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background:lightblue;
+}
+
+.masthead.segment {
+    min-height: 375px;
+}
+
+.footer.segment {
+    min-height: 125px;
+}
+
+@media only screen and (max-width: 400px){
+    .flex-wrapper{
+        display: block;
+    }
+    .btn-flex-wrapper{
+        width:100%;
+        display: flex;
+    }
+    .search-button{
+        width: 80%;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+}
+/* Date of events, sits below Name of Event. */
+span.date {
+    color: crimson;
+    font-weight: bold;
+}
+span.date::before {
+    content: 'Date - ';
+    color:crimson;
+}
+#ticketBtn {
+    background: #2185d0;
+    border: 1px solid black;
+    color:white;
+}
+.ui.cards>.card>.content {
+    background: lightgray;
+    justify-content: center;
+}
+.ui.cards{
+    justify-content: center;
+    /* max-width: 1245px; */
+  
+}
+.ui.cards>.card {
+    border:1px solid;
+    box-shadow: 4px 4px 7px;
+}
